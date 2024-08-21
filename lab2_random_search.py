@@ -149,7 +149,7 @@ solutions = []
 for filename in filenames:
     data = read_tsp_instance(filename)
     random_tsp = TSP(data)
-    random_tsp.fit(data.shape[0] * 10)
+    random_tsp.fit()
 
     instance = filename.split(ROOT_PATH)[-1][1:]
     instances.append(instance)
