@@ -1,1 +1,10 @@
 **/__pycache__/**
+
+# Ignore everything in data/labs
+data/labs/**
+
+# Allow tracking of the directories themselves
+!data/labs/**/
+
+# Un-ignore .gitignore files inside subdirectories
+!data/labs/**/.gitignore
